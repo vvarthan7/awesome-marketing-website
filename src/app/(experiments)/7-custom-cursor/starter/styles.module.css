@@ -3,11 +3,15 @@
   left: 0;
   --w: 50px;
   --h: 50px;
-  --x: 0px;
-  --y: 0px;
-  transform: translate3D(calc(var(--x) - 50%), calc(var(--y) - 50%), 0);
+  --x: 0;
+  --y: 0;
+  transform: translate3D(
+    calc(var(--x) * 1px - 50%),
+    calc(var(--y) * 1px - 50%),
+    0
+  );
   transform-origin: center;
-  
+
   width: var(--w);
   height: var(--h);
 
